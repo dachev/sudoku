@@ -2,9 +2,9 @@
     "name": "sudoku",
     "description": "Sudoku generator and solver for node.js",
     "keywords": ["sudoku", "generate", "solve", "puzzle", "game", "board"],
-    "version": "0.0.1",
+    "version": "0.0.2",
     "main": "index",
-    "bin": { "sudoku": "./bin/sudoku" },
+    "bin": { "sudoku": "./bin/sudoku.js" },
     "dependencies": {
     	"underscore" : "= 1.1.6"
     },
