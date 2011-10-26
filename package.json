@@ -1,0 +1,24 @@
+{
+    "name": "sudoku",
+    "description": "Sudoku generator and solver for node.js",
+    "keywords": ["sudoku", "generate", "solve", "puzzle", "game", "board"],
+    "version": "0.0.1",
+    "main": "./lib/index",
+    "dependencies": {
+    	"underscore" : "= 1.1.6"
+    },
+    "author": {
+        "name"  : "Blagovest Dachev",
+        "email" : "blago@dachev.com",
+        "url"   : "http://www.dachev.com"
+    },
+    "homepage": "https://github.com/dachev/sudoku",
+    "repository" : {
+        "type" : "git",
+        "url"  : "git://github.com/dachev/sudoku.git"
+    },
+    "licenses": [{
+        "type": "GPLv3",
+        "url": "http://www.gnu.org/licenses/gpl-3.0.txt"}
+    ]
+}
