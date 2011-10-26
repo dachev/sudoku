@@ -27,7 +27,7 @@ Sudoku generator and solver for [node.js](http://nodejs.org)
 
 (The MIT License)
 
-Copyright 2010, Blagovest Dachev.
+Copyright 2011, Blagovest Dachev.
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
