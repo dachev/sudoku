@@ -1,33 +1,32 @@
 #!/usr/bin/env node
 
-var sudoku = require('../');
+const sudoku = require('../');
 
-function printboard(board) {
-	var out = '';
+const printboard = (board) => {
+    let out = '';
 
-	for (var row = 0; row < 9; row++) {
-		for (var col = 0; col < 9; col++) {
-			out += [""," "," ","  "," "," ","  "," "," "][col];
-      		out += printcode(board[sudoku.posfor(row, col)]);
-		}
-		out += ['\n','\n','\n\n','\n','\n','\n\n','\n','\n','\n'][row];
-	}
+    for (let row = 0; row < 9; row++) {
+        for (let col = 0; col < 9; col++) {
+            out += ["", " ", " ", "  ", " ", " ", "  ", " ", " "][col];
+            out += printcode(board[sudoku.posfor(row, col)]);
+        }
+        out += ['\n', '\n', '\n\n', '\n', '\n', '\n\n', '\n', '\n', '\n'][row];
+    }
 
-	return out;
-}
+    return out;
+};
 
-function printcode(n) {
-	if (n == null) {
-		return '_';
-	}
+const printcode = (n) => {
+    if (n === null) {
+        return '_';
+    }
 
-	return n + 1 + '';
-}
+    return n + 1 + '';
+};
 
-var puzzle     = sudoku.makepuzzle();
-var solution   = sudoku.solvepuzzle(puzzle);
-var difficulty = sudoku.ratepuzzle(puzzle, 4);
-var data       = {puzzle:puzzle, solution:solution};
+const puzzle     = sudoku.makepuzzle();
+const solution   = sudoku.solvepuzzle(puzzle);
+const difficulty = sudoku.ratepuzzle(puzzle, 4);
 
 console.log('DATA:');
 console.log(JSON.stringify(data));

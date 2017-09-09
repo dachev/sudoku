@@ -6,7 +6,7 @@
     "main": "index",
     "bin": { "sudoku": "./bin/sudoku.js" },
     "dependencies": {
-    	"underscore" : "= 1.1.6"
+
     },
     "author": {
         "name"  : "Blagovest Dachev",
