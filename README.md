@@ -1,31 +1,30 @@
-
 # sudoku
-      
 
-Sudoku generator and solver for [node.js](http://nodejs.org)
+Sudoku generator and solver for [Node.js](http://nodejs.org)
 
 ## Live demo
 [http://blago.dachev.com](http://blago.dachev.com)
 
 ## Installation
 
-``` bash
-    $ npm install sudoku
+```
+    $ npm i sudoku
 ```
 
 ## Usage
 
-``` javascript
-    var sudoku = require('sudoku');
+```js
+    const sudoku = require('sudoku');
 
-    var puzzle     = sudoku.makepuzzle();
-    var solution   = sudoku.solvepuzzle(puzzle);
-    var difficulty = sudoku.ratepuzzle(puzzle, 4);
+    const puzzle     = sudoku.makepuzzle();
+    const solution   = sudoku.solvepuzzle(puzzle);
+    const difficulty = sudoku.ratepuzzle(puzzle, 4);
 ```
 
 
 ## License
 Copyright 2010, Blagovest Dachev.
+-  Modified on September 9, 2017 by Jesús Ángel González Novez.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
