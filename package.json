@@ -1,6 +1,12 @@
 {
   "name": "sudoku",
-  "description": "Sudoku generator and solver for node.js",
+  "description": "Sudoku generator and solver for node.js and Web",
+  "version": "0.0.3",
+  "files": [
+    "dist-*/"
+  ],
+  "pika": true,
+  "sideEffects": false,
   "keywords": [
     "sudoku",
     "generate",
@@ -9,56 +15,15 @@
     "game",
     "board"
   ],
-  "version": "0.0.2",
-  "main": "index",
-  "bin": {
-    "sudoku": "./bin/sudoku.js"
-  },
-  "scripts": {
-    "build": "npx @pika/pack"
-  },
-  "@pika/pack": {
-    "pipeline": [
-      [
-        "@pika/plugin-standard-pkg",
-        {
-          "exclude": [
-            "__tests__/**/*"
-          ]
-        }
-      ],
-      [
-        "@pika/plugin-build-node"
-      ],
-      [
-        "@pika/plugin-build-web"
-      ],
-      [
-        "@pika/plugin-build-types"
-      ]
-    ]
-  },
-  "dependencies": {},
-  "author": {
-    "name": "Blagovest Dachev",
-    "email": "blago@dachev.com",
-    "url": "http://www.dachev.com"
-  },
   "homepage": "https://github.com/dachev/sudoku",
   "repository": {
     "type": "git",
     "url": "git://github.com/dachev/sudoku.git"
   },
-  "licenses": [
-    {
-      "type": "GPLv3",
-      "url": "http://www.gnu.org/licenses/gpl-3.0.txt"
-    }
-  ],
-  "devDependencies": {
-    "@pika/plugin-build-node": "^0.7.1",
-    "@pika/plugin-build-types": "^0.7.1",
-    "@pika/plugin-build-web": "^0.7.1",
-    "@pika/plugin-standard-pkg": "^0.7.1"
-  }
+  "dependencies": {},
+  "devDependencies": {},
+  "esnext": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "module": "dist-web/index.js",
+  "types": "dist-types/index.d.ts"
 }

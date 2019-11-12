@@ -2,7 +2,7 @@
 # sudoku
       
 
-Sudoku generator and solver for [node.js](http://nodejs.org)
+Sudoku generator and solver for [node.js](http://nodejs.org) and Web.
 
 ## Live demo
 [http://blago.dachev.com](http://blago.dachev.com)
@@ -21,6 +21,11 @@ Sudoku generator and solver for [node.js](http://nodejs.org)
     var puzzle     = sudoku.makepuzzle();
     var solution   = sudoku.solvepuzzle(puzzle);
     var difficulty = sudoku.ratepuzzle(puzzle, 4);
+```
+OR
+
+``` typescript
+    import { makepuzzle, solvepuzzle, ratepuzzle } from "sudoku";
 ```
 
 
