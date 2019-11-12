@@ -1,25 +1,64 @@
 {
-    "name": "sudoku",
-    "description": "Sudoku generator and solver for node.js",
-    "keywords": ["sudoku", "generate", "solve", "puzzle", "game", "board"],
-    "version": "0.0.2",
-    "main": "index",
-    "bin": { "sudoku": "./bin/sudoku.js" },
-    "dependencies": {
-    	"underscore" : "= 1.1.6"
-    },
-    "author": {
-        "name"  : "Blagovest Dachev",
-        "email" : "blago@dachev.com",
-        "url"   : "http://www.dachev.com"
-    },
-    "homepage": "https://github.com/dachev/sudoku",
-    "repository" : {
-        "type" : "git",
-        "url"  : "git://github.com/dachev/sudoku.git"
-    },
-    "licenses": [{
-        "type": "GPLv3",
-        "url": "http://www.gnu.org/licenses/gpl-3.0.txt"}
+  "name": "sudoku",
+  "description": "Sudoku generator and solver for node.js",
+  "keywords": [
+    "sudoku",
+    "generate",
+    "solve",
+    "puzzle",
+    "game",
+    "board"
+  ],
+  "version": "0.0.2",
+  "main": "index",
+  "bin": {
+    "sudoku": "./bin/sudoku.js"
+  },
+  "scripts": {
+    "build": "npx @pika/pack"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
     ]
+  },
+  "dependencies": {},
+  "author": {
+    "name": "Blagovest Dachev",
+    "email": "blago@dachev.com",
+    "url": "http://www.dachev.com"
+  },
+  "homepage": "https://github.com/dachev/sudoku",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dachev/sudoku.git"
+  },
+  "licenses": [
+    {
+      "type": "GPLv3",
+      "url": "http://www.gnu.org/licenses/gpl-3.0.txt"
+    }
+  ],
+  "devDependencies": {
+    "@pika/plugin-build-node": "^0.7.1",
+    "@pika/plugin-build-types": "^0.7.1",
+    "@pika/plugin-build-web": "^0.7.1",
+    "@pika/plugin-standard-pkg": "^0.7.1"
+  }
 }

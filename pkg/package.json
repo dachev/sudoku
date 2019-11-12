@@ -1,0 +1,38 @@
+{
+  "name": "sudoku",
+  "description": "Sudoku generator and solver for node.js",
+  "version": "0.0.3",
+  "bin": {
+    "sudoku": "./bin/sudoku.js"
+  },
+  "files": [
+    "dist-*/",
+    "bin/"
+  ],
+  "pika": true,
+  "sideEffects": false,
+  "keywords": [
+    "sudoku",
+    "generate",
+    "solve",
+    "puzzle",
+    "game",
+    "board"
+  ],
+  "homepage": "https://github.com/dachev/sudoku",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dachev/sudoku.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@pika/plugin-build-node": "^0.7.1",
+    "@pika/plugin-build-types": "^0.7.1",
+    "@pika/plugin-build-web": "^0.7.1",
+    "@pika/plugin-standard-pkg": "^0.7.1"
+  },
+  "esnext": "dist-src/index.js",
+  "main": "dist-node/index.js",
+  "module": "dist-web/index.js",
+  "types": "dist-types/index.d.ts"
+}
