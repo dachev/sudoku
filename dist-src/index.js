@@ -391,5 +391,6 @@ module.exports = {
   },
   solvepuzzle: solvepuzzle,
   ratepuzzle: ratepuzzle,
+  checkpuzzle: checkpuzzle,
   posfor: posfor
 };
