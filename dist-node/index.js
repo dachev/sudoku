@@ -347,7 +347,7 @@ function randomInt(max) {
 function shuffleArray(original) {
   // Swap each element with another randomly selected one.
   for (var i = original.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
+    var j = randomInt(i);
     var contents = original[i];
     original[i] = original[j];
     original[j] = contents;
