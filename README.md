@@ -1,6 +1,7 @@
 
 # sudoku
       
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://stand-with-ukraine.pp.ua)
 
 Sudoku generator and solver for [node.js](http://nodejs.org) and Web.
 
