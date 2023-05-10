@@ -6,7 +6,7 @@
 Sudoku generator and solver for [node.js](http://nodejs.org) and Web.
 
 ## Live demo
-[http://blago.dachev.com](http://blago.dachev.com)
+[http://shnapps.dachev.com/sudoku](http://shnapps.dachev.com/sudoku)
 
 ## Installation
 
