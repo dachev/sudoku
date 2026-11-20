@@ -86,6 +86,30 @@ function solvepuzzle(board) {
 
 function solveboard(original) {
   var board = [].concat(original);
+
+  for (var axis = 0; axis < 3; axis++) {
+    for (var x = 0; x < 9; x++) {
+      var seen = 0;
+
+      for (var y = 0; y < 9; y++) {
+        var e = board[posfor(x, y, axis)];
+
+        if (e === null) {
+          continue;
+        }
+
+        if (seen & 1 << e) {
+          return {
+            state: [],
+            answer: null
+          };
+        }
+
+        seen |= 1 << e;
+      }
+    }
+  }
+
   var guesses = deduce(board);
 
   if (guesses === null) {
