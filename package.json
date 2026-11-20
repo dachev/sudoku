@@ -2,6 +2,9 @@
   "name": "sudoku",
   "description": "Sudoku generator and solver for node.js and Web",
   "version": "0.0.3",
+  "scripts": {
+    "test": "node --test test.js"
+  },
   "files": [
     "dist-*/"
   ],

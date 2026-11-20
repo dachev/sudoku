@@ -84,6 +84,25 @@ function solvepuzzle(board) {
 
 function solveboard(original) {
   var board = [].concat(original);
+
+  if (board.length !== 81) {
+    return {
+      state: [],
+      answer: null
+    };
+  }
+
+  for (var i = 0; i < board.length; i++) {
+    var e = board[i];
+
+    if (e !== null && (!Number.isInteger(e) || e < 0 || e > 8)) {
+      return {
+        state: [],
+        answer: null
+      };
+    }
+  }
+
   var guesses = deduce(board);
 
   if (guesses === null) {
