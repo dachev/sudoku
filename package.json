@@ -1,12 +1,15 @@
 {
   "name": "sudoku",
   "description": "Sudoku generator and solver for node.js and Web",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "test": "node --test test.js"
   },
   "files": [
-    "dist-*/"
+    "dist-node/",
+    "dist-src/",
+    "dist-web/",
+    "dist-types/"
   ],
   "pika": true,
   "sideEffects": false,
